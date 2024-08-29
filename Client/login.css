@@ -1,0 +1,35 @@
+body{
+    background-color:#FFE0B5;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+.login-container{
+    display: flex;
+    padding: 20px 20px;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    border-radius: 4px;
+    align-items: center;
+    background-color:#FFF2D7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.form-group{
+    margin-bottom: 20px;
+    
+}
+input{
+    padding: 3px 3px;
+}
+label{
+    font-size: 18px;
+}
+#button1{
+    padding: 3px;
+    margin-left: 50px ;
+}
