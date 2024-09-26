@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const Alien = require('../models/model')
 
-
 router.get('/', async(req,res) => 
 {
     try
@@ -15,7 +14,6 @@ router.get('/', async(req,res) =>
         res.send('Error ' + err)
     }
 })
-
 router.get('/:id', async(req,res) => 
 {
     try
@@ -23,14 +21,11 @@ router.get('/:id', async(req,res) =>
            const alien = await Alien.findById(req.params.id)
            res.json(alien)
     }
-
 catch(err)
 {
         res.send('Error ' + err)
     }
 })
-
-
 router.post('/', async(req,res) => 
 {
     const alien = new Alien
@@ -41,7 +36,6 @@ router.post('/', async(req,res) =>
         exam_status: req.body.exam_status,
         cgpa: req.body.cgpa
     })
-
     try
    {
         const a1 =  await alien.save() 
@@ -52,7 +46,6 @@ catch(err)
         res.send('Error')
     }
 })
-
 router.patch('/:id',async(req,res)=> 
 {
     try
@@ -67,8 +60,6 @@ catch(err)
    {
         res.send('Error')
     }
-
 })
-
 module.exports = router;
 
