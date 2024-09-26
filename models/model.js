@@ -1,9 +1,6 @@
 const mongoose = require('mongoose')
-
-
 const alienSchema = new mongoose.Schema
 ({
-
     name: 
     {
         type: String,
@@ -18,7 +15,6 @@ const alienSchema = new mongoose.Schema
    {
         type: String,
         required: true,
-        
     },
     exam_status:
     {
@@ -31,9 +27,5 @@ const alienSchema = new mongoose.Schema
         type: Number,
         required: true
     }
-
-    
-
 })
-
 module.exports = mongoose.model('class',alienSchema)
